@@ -16,7 +16,7 @@ const app = express(); // Initialize Express application
 app.use(express.json()); // Parse JSON request bodies
 app.use(express.urlencoded({ extended: false })); // Parse URL-encoded data
 app.use(cors({
-    origin: ['http://localhost:3000', "https://tasks-organizer-app-derico.onrender.com"],
+    origin: ['http://localhost:3000', "https://rhotelhub-backend-app.onrender.com"],
 })
 ); // Enable CORS for frontend-backend communication
 app.use("/api/tasks", taskRoutes); //Routes
